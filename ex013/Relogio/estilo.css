@@ -1,0 +1,41 @@
+body{
+     background-image: url(../Relogio/pexels-tyler-lastovich-808465.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+}
+header{
+     color: rgb(25, 29, 87);
+     text-align: center;
+     
+}
+
+section{
+     padding: 20px;
+     margin: auto;
+     background: rgba(128, 128, 128, 0.932);
+     width: 400px;
+     border-radius: 4px;
+     box-shadow: 4px 4px 4px rgba(7, 7, 7, 0.418);
+}
+div{
+     text-align: center;
+     padding: 10px;
+     font: normal 14pt Verdana ;
+     color: rgb(255, 255, 255);
+}
+
+footer{
+     font-style: italic;
+     color: rgb(0, 0, 0);
+     text-align: center;
+     background-color: rgba(214, 214, 214, 0.205); 
+     position: absolute;
+     bottom: 3px;
+     padding: 5px;
+     width: 100%;
+}
+h1{
+     background-color: rgba(214, 214, 214, 0.205); 
+     padding: 10px;
+}
