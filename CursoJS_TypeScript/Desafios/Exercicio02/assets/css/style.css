@@ -9,32 +9,33 @@
 *{
     box-sizing: border-box;
      outline: 0;
+     margin: 0;
+     padding: 0;
      
 }
 body{
-     margin: 0;
-     padding: 0;
+    
     background-color: var(--primary-color);
     font-family: "Open Sans", sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
 }
+
+
 .container{
      max-width: 640px;
-     margin: 50px auto;
-     background-color: #fff;
-     padding: 20px;
+     margin: 3px auto;
+     background-color: #e7e7e7;
+     padding: 10px 20px ;
      border-radius: 10px;
 }
 
-.container-imc{
-     display: flex;
-     
-}
+
 form input, form label, form button {
      display: block;
      width: 100%;
-     margin-bottom: 10px;
+     
+     
 
 }
 form input{
@@ -53,13 +54,19 @@ form button{
      color: white;
      font-size: 18px;
      font-weight: 700;
-     height: 70px;
+     height: 60px;
      cursor: pointer;
-     margin-top: 30px;
+     margin-top: 10px;
 }
 form button:hover{
      background-color: var(--primary-color-dark);
 }
 form button:active{
      background-color: var(--primary-color-active);
+}
+.paragrafo-resultado{
+     background-color: green;
+}
+.paragrafo-bad{
+     background-color: red;
 }
