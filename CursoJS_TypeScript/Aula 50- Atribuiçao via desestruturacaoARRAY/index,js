@@ -1,0 +1,25 @@
+let a ='a'; //b
+let b = 'b'; // c
+let c = 'c'; //c
+
+const letras = [b, c, a];
+[a, b, c] = letras;
+
+console.log(a, b, c);
+
+
+const numeros = [10, 20, 30, 40, 50];
+const [primeiroN, segundoN, ...resto] = numeros;
+console.log(primeiroN, segundoN);
+console.log(resto);
+
+const num = [8, 12, 24, 50, 80];
+const [um, , tres, ,quatro] = num;
+console.log(um,tres,quatro);
+
+
+//                  1         2          3
+//              0, 1, 2    3, 4, 5    6, 7, 8
+const num1 = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ];
+const [lista1, lista2, lista3]= num1;
+console.log(lista3[2]); //estou pegando o 8
