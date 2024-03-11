@@ -1,9 +1,9 @@
 
-const elementos =[
+const elementos =[ //criando objetos no array
      {tag: 'p', texto: 'Frase 1'},
      {tag: 'div', texto: 'Frase 2'},
      {tag: 'footer', texto: 'Frase 3'},
-     {tag: 'section', texto: 'Frase '}
+     {tag: 'section', texto: 'Frase 4'}
 
 ];
 
@@ -12,9 +12,12 @@ const div = document.createElement('div');
 
 for(let i = 0; i < elementos.length; i++){
      //console.log(elementos[i].tag); //tag o objeto no caso p,div..
+     //desestruturar objetos
      let{tag, texto } = elementos[i];
      let tagCriada =document.createElement(tag);
-     tagCriada.innerHTML = texto;
-     console.log(tag);
+     tagCriada.innerText = texto; //ou innerHTML
+     div.appendChild(tagCriada);
+     
 
 }
+container.appendChild(div);
