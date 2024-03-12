@@ -8,8 +8,9 @@ for( let i in frutas){
 //EXEMPLOS----------
 /*for(let i = 0; i < frutas.length; i++){
 console.log(frutas[i]);
-}*/
 
+}*/
+//for in retorna o indice
 //EXEMPLO--------
 const pessoa ={
      nome:'dani',
