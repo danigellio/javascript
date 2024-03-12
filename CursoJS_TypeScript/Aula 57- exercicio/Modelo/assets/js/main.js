@@ -8,6 +8,7 @@ console.log(backgroundColorBody);
 
 for (let p of ps) {
      //console.log(p);
+     //COLOCANDO CSS NO JS
      p.style.backgroundColor = backgroundColorBody;
      p.style.color = '#FFFFFF';
 }
