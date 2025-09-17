@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h1>Boolean, Number , String -typeof</h1>
+     <Script>
+
+          let mensagem =  "ola eu sou uma 'mensagem de texto'"
+          //podemos por assim "  '' "  fica como texto
+          // .... "ola eu sou uma \"mensagem de texto\" " 
+          console.log(mensagem)
+
+          console.log(typeof 0)
+          console.log(typeof "0")
+          console.log(typeof String(0))
+
+          let isValid = false
+          console.log(typeof isValid)
+          //boolean false 0 " " string vazia
+          //boolean true 1 0.1 "a" qualquer valor é true
+
+
+          let naoDeclarado = null
+          console.log(naoDeclarado)
+          naoDeclarado = 0
+          console.log(naoDeclarado)
+
+          let n = parseFloat("a")
+          console.log(n)
+          console.log(typeof n ) //o tipo e number mas nao qer disser q dentro é um numero
+
+
+          let banana = 'ba'
+          let letras = parseFloat('b')
+          console.log(banana + letras + 'a')
+     </Script>
+</body>
+</html>
