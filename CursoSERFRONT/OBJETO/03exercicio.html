@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <script>
+           const endereco = {
+               logradouro: "Rua Flores",
+               numero: 100
+          }
+          //o endereco tem que estar primeiro para depois poder chamar, primeiro deve declarar depois chamar
+          const pessoa = {
+               nome : "joao",
+               sobrenome: "Silva",
+               endereco: endereco
+               //ou somente endereco
+          }
+          //let nome: "maria", vc coloca no nome: nome,  que fica maria
+         
+          console.log(pessoa) //pessoa.endereco pessoa.endereco.logradouro
+          document.write(`O ${pessoa.nome} mora em ${pessoa.endereco.logradouro}, numero ${pessoa.endereco.numero}`)
+
+          //LOOP FOR .. IN  serve para interagir com um objeto ele percorre nele
+          for (let prop in pessoa){
+               console.log(prop)
+          }
+     </script>
+</body>
+</html>
