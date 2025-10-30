@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          table{
+               background-color: lightcyan;
+               width: 400px;
+               border: 1px solid black;
+               border-collapse: collapse;
+          }
+          td,th{
+               border: 1px solid black;
+               padding: 10px;
+          }
+          td{
+               text-align: center
+          }
+     </style>
+</head>
+<body>
+     <h1>Tabela</h1>
+     <table>
+          <thead>
+               <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+               </tr>
+          </thead>
+          <tbody id="tabelaProdutos">
+               <!--<tr>
+                    <td>-aqui fica o js que colocamos-</td>
+               </tr>-->
+          </tbody>
+     </table>
+     <script>
+          const produtos = [
+               {nome: "caneta", preco: 2, estoque: 3},
+               {nome: "lápis", preco: 1, estoque: 7},
+               {nome: "caderno", preco: 4, estoque: 4},
+               {nome: "apontador", preco: 1, estoque: 2}
+          ]
+          const tabelaProdutos = document.getElementById('tabelaProdutos')
+          for(let i = 0; i < produtos.length; i++){
+               tabelaProdutos.innerHTML += 
+               `<td>Produto: ${produtos[i].nome}</td> 
+               <td>Preço R$: ${produtos[i].preco.toFixed(2)}</td> 
+               <td>Quantidade: ${produtos[i].estoque}</td> 
+               `
+          }
+          
+     </script>
+</body>
+</html>

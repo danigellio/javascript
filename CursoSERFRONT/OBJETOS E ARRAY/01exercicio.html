@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <ul id="listas">
+        
+          
+     </ul>
+     <script>
+          const pessoas = 
+               [ 
+               { nome: "Maria", email:'maria@user.com'},
+               {nome:'Joao', email: 'joao@user.com'},
+               {nome:'Jose', email: 'jose@user.com'},
+               {nome:'Ana', email: 'ana@user.com'}
+               ]
+               const listas = document.getElementById('listas')   
+
+               for (let i = 0; i < pessoas.length; i++){
+                    listas.innerHTML += '<li> Nome: ' + pessoas[i].nome + ' - E-mail: '+ pessoas[i].email + '</li>'
+               }
+
+     </script>
+</body>
+</html>
