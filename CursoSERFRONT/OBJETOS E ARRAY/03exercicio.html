@@ -6,6 +6,48 @@
      <title>Document</title>
 </head>
 <body>
+     <h1> Informações de um aluno </h1>
+
+     <div id="output"> 
+          <!--h2 nome1
+          p notas:
+          ul li 9 10 8 8
+          p media: 3
+          p aprovado? sim nao
+          -->
+     </div>
+         <script>
+         const aluno = {
+          nome: "Daniela",
+          notas: [ 10, 9, 8, 10]
+         }
+         const output = document.getElementById("output")
+         output.innerHTML = "<h2> Aluno: " + aluno.nome + "</h2>"
+         output.innerHTML += "<p> Notas: </p>"
+        
+         output.innerHTML += "<ul> "
+               let soma = 0
+               for(let i = 0; i < aluno.notas.length; i++){
+                    soma += aluno.notas[i]
+                    output.innerHTML += "<li> " + aluno.notas[i] + "</li>"
+               }
+               let media = soma / aluno.notas.length
+
+         output.innerHTML += "</ul>"
+         output.innerHTML += "<p>Media: " + media + "</p>"
+
+         let aprovado = (media >= 7) ? "Sim " : "Não" //ternario
+         // logo apos o ? é true e logo apos o : é false
+          /*igual 
+          if(media >= 7){
+               aprovado = "sim"
+          }else{
+          aprovado = "nao"
+          }
+          */
+
      
+         output.innerHTML += "Aprovado? " + aprovado
+         </script>
 </body>
 </html>

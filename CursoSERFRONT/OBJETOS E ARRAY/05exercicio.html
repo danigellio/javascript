@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <ul id="listaNotas"></ul>
+     <script>
+          const alunos = [
+               {nome: "Daniela", notas: [8, 7, 8, 9]},
+               {nome: "Inbrahin", notas:[9, 10, 8, 9]},
+               {nome:"Frederica", notas: [10, 10, 10, 10]}
+          ]
+          let html = " "
+          
+          const listaNotas = document.getElementById("listaNotas")
+          for(let i = 0; i < alunos.length; i++){
+               html += "<li> Nome:" + alunos[i].nome + "media:"
+               let soma = 0
+                    for(let j = 0; j < alunos[i].notas.length; j++){
+                         soma += alunos[i].notas[j]
+                         console.log( i, j)
+                         
+                    }
+                    let media = soma / alunos[i].notas.length
+                    html += media + "</li>"
+          }
+
+
+          listaNotas.innerHTML = html
+     </script>
+</body>
+</html>
