@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+   <h1>Tabuada</h1>
+    <input type="number" name="" id="num" value="1"> 
+    <button onclick="mostrarTabuada()">Calcular</button>
+    <button onclick="limparTabuada()">Limpar</button>
+    <div id="output"></div>
+
+    <script>
+     const num = document.getElementById('num')
+     const output = document.getElementById('output')
+     let html = " "
+
+     function mostrarTabuada(){
+          const numValue = parseFloat(num.value)
+          limparTabuada()
+          for( let i = 1; i <= 10; i++){
+               html += `${i} x ${numValue} = ${i * numValue}  <br>`
+          }
+          
+          output.innerHTML = html
+          
+     }
+
+     function limparTabuada(){
+          html = " "
+          output.innerHTML= " "
+     }
+
+     mostrarTabuada()
+    </script>
+    
+</body>
+</html>
