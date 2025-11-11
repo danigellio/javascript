@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h1>Calcular area do triângulo</h1>
+     <label for="">Area
+          <input type="number" name="" id="area">
+     </label>
+     <label for="">Base
+          <input type="number" name="" id="base">
+     </label>
+     <button onclick="mostrarResultado() ">Calcular</button>
+     <output id="output">Teste</output>
+
+     <script>
+          const area = document.getElementById("area") //aqi esta em string vc deve fazer uma variavel na funcao para pegar o value
+          const base = document.getElementById("base")
+          const output = document.getElementById("output")
+
+          function mostrarResultado(){
+               let areavalue = parseFloat(area.value)// aqi pegamos o valor digitado pelo usuario
+               let basevalue =  parseFloat(base.value)
+               let calculo = (areavalue * basevalue) / 2
+               output.innerHTML = `A area do triagulo é: ${calculo}`
+          }
+          
+
+          
+     </script>
+</body>
+</html>
