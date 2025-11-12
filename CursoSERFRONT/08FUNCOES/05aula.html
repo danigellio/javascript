@@ -8,18 +8,31 @@
 <body>
      <h1>Calcular a área da circunferência</h1>
      <input type="number" name="" id="raio">
-     <button onclick="MostrarArea()">Mostrar Area</button>
+     <button onclick="MostrarAreaInput()">Mostrar Area Input</button>
+     <button onclick="MostrarAreaPrompt()">Mostrar Area Prompt</button>
+
+
      <div id="output"></div>
      <script>
           const raio = document.getElementById('raio')
           const output = document.getElementById('output')
 
-          function MostrarArea (){
+            function MostrarAreaPrompt (){
+               let raioValue = parseFloat(prompt("Digite o raio:"))
+               MostrarArea(raioValue)
+               
+          }
+          function MostrarAreaInput (){
                let raioValue = parseFloat(raio.value)
-               const pi = Math.PI
-               let area = pi * raioValue * raioValue //poderia ser raioValue ** 2 ou **3
+                 MostrarArea(raioValue)
+               
+          }
 
+          function MostrarArea(raio){
+               const pi = Math.PI
+               let area = pi * raio * raio
                output.innerHTML = `A Area da circunferência de raio ${raioValue} é ${area}`
+
           }
      </script>
 </body>
