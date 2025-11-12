@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <input type="number" name="" id="num1">
+     <input type="text" name="" id="operador">
+     <input type="number" name="" id="num2">
+     
+     <button onclick="calcular()">Calcular</button>
+     <div id="saida"></div>
+
+     <script>
+          const num1 = document.getElementById('num1')
+          const num2 = document.getElementById('num2')
+          const operador = document.getElementById('operador')
+          const saida = document.getElementById('saida')
+
+          function soma(n1, n2, simbolo){ //sempre a funcao entra a palavra return ele ja retorna e para a funcao, por isso nao precisamos do break
+               switch (simbolo){
+                    case "+" :
+                         return n1 + n2
+                    case "-" :
+                         return n1 - n2
+                    case "*" :
+                         return n1 * n2
+                    case "/" :
+                         return n1 / n2
+                         default:
+                              return: null
+               }
+          }
+
+     </script>
+</body>
+</html>

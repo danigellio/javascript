@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <input type="number" name="" id="num"> <br>
+     <button onclick="MostrarPrompAlert ()">Mostrar Prompt com Alert</button> <br>
+     <button onclick="MostrarInputAlert ()">Mostrar Input com Alert</button> <br>
+     <button onclick="MostrarPrompOutput ()">Mostrar Prompt com Output</button> <br>
+     <button onclick="MostrarInputOutput ()">Mostrar Input com Output</button> <br>
+
+     <output id="output"></output>
+     <script>
+          const raio = document.getElementById( 'num')
+          const output = document.getElementById('output')
+
+          function MostrarPrompAlert(){
+               let numRaio = parseFloat(prompt('Digite o raio: '))
+               let mensagem = MostrarArea(numRaio)
+               alert(`A área da cincunferência de raio ${numRaio} é ${mensagem}` )
+
+          }
+          function MostrarInputAlert(){
+               let raioValue = parseFloat(raio.value)
+               let mensagem = MostrarArea(raioValue)
+               alert(`A área da cincunferência de raio ${raioValue} é ${mensagem}` )
+          }
+
+          function MostrarPrompOutput(){
+               let numRaio = parseFloat(prompt('Digite o raio: '))
+               let mensagem = MostrarArea(numRaio)
+               output.innerHTML= `A área da cincunferência de raio ${numRaio} é ${mensagem}` 
+
+          }
+          function MostrarInputOutput(){
+               let raioValue = parseFloat(raio.value)
+               let mensagem = MostrarArea(raioValue)
+                output.innerHTML = `A área da cincunferência de raio ${raioValue} é ${mensagem}`
+          }
+
+
+
+
+          function MostrarArea(funcaoRaio){
+               const pi = Math.PI
+               let area = pi * funcaoRaio * funcaoRaio
+               
+               return area
+          }
+     </script>
+</body>
+</html>
