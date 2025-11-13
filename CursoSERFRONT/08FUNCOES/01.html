@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <label for="">Primeiro Numero
+          <input type="number" name="" id="num1">
+     </label>
+      <label for="">Primeiro Numero
+          <input type="number" name="" id="num2">
+     </label>
+     <button onclick="somar()">Calcular</button>
+     <div id="output"></div>
+
+     <script>
+          const num1 = document.getElementById('num1')
+          const num2 = document.getElementById('num2')
+          const output = document.getElementById('output')
+
+          function somar(){
+               let number1 = parseFloat(num1.value)
+               let number2 = parseFloat(num2.value)
+               let soma = calculo(number1, number2)
+               output.innerHTML= `A soma de ${number1} +  ${number2} é:  ${soma}`
+          }
+
+          function calculo(n1 , n2){
+               let soma = n1 + n2
+               return soma
+          }
+     </script>
+</body>
+</html>
