@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <div id="output"></div>
+     <script>
+          let obj = {nome: "daniela", email: 'daniela@server.com'}
+
+          try{
+               document.getElementById('output').innerHTML = `Nome: ${obj.nome} - E-mail: ${obj.email}`
+          }catch(e){
+               console.log(e)
+               console.log(e.message)  
+                    alert('deu erro')
+               
+          }finally{
+               alert('fim do programa')
+          }
+
+     </script>
+     <script src="areas.js"></script>
+
+     <script>
+          try{
+          console.log(calcularAreaRetangulo(2,1 ))
+          }catch(e){ //error
+               alert("deu ruim" + e.message)
+          }
+
+          try{
+               let areaTriangulo=
+          }
+          alert('fim do programa')
+
+     </script>
+</body>
+</html>
