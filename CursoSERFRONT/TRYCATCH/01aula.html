@@ -22,6 +22,8 @@
           }
 
      </script>
+
+
      <script src="areas.js"></script>
 
      <script>
@@ -32,8 +34,19 @@
           }
 
           try{
-               let areaTriangulo=
+               let areaTriangulo= calcularAreaTriangulo( 3, 4)
+               document.getElementById('output').innerHTML = `A area do triangulo è ${areaTriangulo}`
+          }catch(e){
+               console.log(e)
           }
+
+          try{
+               let areaCirculo = calcularAreaCirculo(10)
+               console.log(`a area do circulo de raio 10 é: ${areaCirculo}`)
+          }catch(e){
+               console.log(e.message)
+          }
+
           alert('fim do programa')
 
      </script>
